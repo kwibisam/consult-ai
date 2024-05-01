@@ -1,0 +1,83 @@
+{
+    "template": {
+      "sections": [
+        {
+          "title": "executive summary",
+          "content": [
+            "business concept",
+            "business goals and vision",
+            "product description and differentiation",
+            "target market",
+            "marketing plan",
+            "current financial state",
+            "projected financial state",
+            "the ask",
+            "the team"
+          ]
+        },
+        {
+          "title": "company overview",
+          "content": [
+            "business structure",
+            "nature of the business",
+            "industry",
+            "vision, mission, and values",
+            "background information",
+            "business objectives",
+            "team"
+          ]
+        },
+        {
+          "title": "market analysis",
+          "content": [
+            "market size",
+            "swot analysis",
+            "competitive analysis"
+          ]
+        },
+        {
+          "title": "products and services",
+          "content": [
+            "detailed description of each product or service",
+            "unique features and benefits"
+          ]
+        },
+        {
+          "title": "customer segmentation",
+          "content": [
+            "demographics of target market",
+            "psychographics and behavior patterns",
+            "needs and pain points"
+          ]
+        },
+        {
+          "title": "marketing plan",
+          "content": [
+            "price",
+            "product",
+            "promotion",
+            "place"
+          ]
+        },
+        {
+          "title": "logistics and operations plan",
+          "content": [
+            "suppliers",
+            "production",
+            "facilities",
+            "equipment",
+            "shipping and fulfilment",
+            "inventory"
+          ]
+        },
+        {
+          "title": "financial plan",
+          "content": [
+            "income statement",
+            "balance sheet",
+            "cash-flow statement"
+          ]
+        }
+      ]
+    }
+  }
