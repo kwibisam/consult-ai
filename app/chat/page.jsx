@@ -40,7 +40,8 @@ const Chat = () => {
       history: history,
     };
     try {
-      const response = await fetch("http://localhost:3000/api/chat", {
+      const url = process.env.URL
+      const response = await fetch(`${url}/api/chat`, {
         method: "post",
         headers: {
           "Content-Type": "application/json",

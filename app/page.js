@@ -22,7 +22,8 @@ export default function Home({ searchParams }) {
   const onGenerate = async (e) => {
     setLoading(true)
     try {
-      const response = await fetch("http://localhost:3000/api/bplan", {
+      const url = process.env.URL
+      const response = await fetch(`${url}/api/bplan`, {
         method: 'post',
         headers: {
           'Content-Type': 'application/json'
