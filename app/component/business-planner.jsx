@@ -41,6 +41,7 @@ export default function BusinessPlanner({ baseUrl }) {
       setLoading(false)
     } catch (error) {
       alert(error)
+      console.log("There was an error:", error)
       setLoading(false)
     }
 
