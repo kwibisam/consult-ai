@@ -45,9 +45,15 @@ export async function POST(req,res) {
     2. Marketing Details: ${marketing}.
     3. Competitor Information: ${competition}.
     4. Financial Overview: ${overview}.`
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
-    // const clean = text.replace(/^```json\s+([\s\S]+?)\s*```$/g, '$1')
-    return Response.json({data: text})
+
+    try {
+      const result = await model.generateContent(prompt);
+      const response = result.response;
+      const text = response.text();
+      // const clean = text.replace(/^```json\s+([\s\S]+?)\s*```$/g, '$1')
+      return Response.json({data: text}) 
+    } catch (error) {
+      console.log("An Error Occured: ", error)
+      return Response.json({error: 'an error occured: '}, {status: 500})
+    }
 }
